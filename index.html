@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Community Portal</title>
+    <link rel="stylesheet" href="styles/welcome.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1 id="welcome-title"></h1>
+        <p id="welcome-subtitle"></p>
+      </header>
+
+      <section class="card">
+        <h2>About this page</h2>
+        <p id="about-text"></p>
+      </section>
+
+      <section class="card">
+        <h2>Privacy notice</h2>
+        <p>
+          We collect only basic session analytics after consent. No invasive fingerprinting,
+          no hidden tracking, and no sensitive data collection.
+        </p>
+        <label class="consent">
+          <input type="checkbox" id="consent-checkbox" />
+          I agree to basic analytics collection for this session.
+        </label>
+        <button id="start-analytics">Enable Analytics</button>
+        <p id="status"></p>
+      </section>
+
+      <section class="card">
+        <h2>Join our Telegram bot</h2>
+        <p id="telegram-text"></p>
+        <a class="button" id="telegram-link" href="#" rel="noopener noreferrer">Open Bot</a>
+      </section>
+    </main>
+
+    <script src="scripts/page-content.js"></script>
+    <script src="scripts/collector.js"></script>
+    <script src="scripts/telegram.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
